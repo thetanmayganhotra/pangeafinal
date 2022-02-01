@@ -1,0 +1,48 @@
+.artists_details_wrapper {
+  .artist_card {
+    border-radius: 10px;
+    @include neonEffectModal(10px, $neon_background_seven);
+    background: $secondary_theme;
+    .user_image {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      @include displayCenter(center, center);
+      img {
+        border-radius: 50%;
+        @include image(cover);
+      }
+    }
+  }
+  .artist_nfts {
+    // margin-top: 100px;
+    h1 {
+      width: fit-content;
+    }
+  }
+
+  @include mQ($sm) {
+    // margin-top: -150px !important;
+  }
+}
+.filters {
+  @include displayCenter(center, space-between);
+  overflow-x: scroll;
+  // background-color: red;
+  padding: 20px 0 10px 10px;
+  margin: 0 0 50px 0;
+  .filter_wrapper {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    p {
+      border-radius: 33px;
+      padding: 5px 25px;
+      @include neonEffectFour(33px);
+      background: $secondary_theme;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

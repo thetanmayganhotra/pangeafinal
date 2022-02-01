@@ -1,0 +1,28 @@
+# ethereum
+
+minting:https://rinkeby.etherscan.io/address/0x592870C57a29426BAF17c8244137D8ec895221B9#code
+auction:https://rinkeby.etherscan.io/address/0xF0b3Ce43bE033558F6476Eebe24Ec503bfbea805#code
+market:https://rinkeby.etherscan.io/address/0x5ab647f2ee93e6F24d14DaB99a636F4ecfF92b63#code
+opentobids:https://rinkeby.etherscan.io/address/0x84b46E07EB6BE2a07605CEcfC578A4DDF740a33D#code
+
+# polygon
+
+minting:https://mumbai.polygonscan.com/address/0xFbC34671E544D7d1088c3172ee9F3B1f33372fb0#code
+auction:https://mumbai.polygonscan.com/address/0xd76B377c087E4e78a131e361A2d82979D14557Cd#code
+market:https://mumbai.polygonscan.com/address/0xcd7e8e1608B3cB15c2826fc046F2a1e252778357#code
+opentobids:https://mumbai.polygonscan.com/address/0xD836DFa50A0d0BCB7Dedc5C725Ab689bDDaD71C5#code
+
+# binance
+
+minting:https://testnet.bscscan.com/address/0x8f32Dc15878861a2C961D4305F4A59D22E97eB9A#code
+auction:https://testnet.bscscan.com/address/0x9eAb5Ff9fd971547072A7925228E5d8428E31F88#code
+market:https://testnet.bscscan.com/address/0xF392327e5024bF87aDbBA2891B41858C642c196F#code
+opentobids:https://testnet.bscscan.com/address/0xbA0832b59b2ecf25dE6D31E4C2C25B455A36E598#code
+
+# solana
+
+minting:
+auction:
+market:
+opentobids:
+

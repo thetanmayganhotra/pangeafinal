@@ -1,0 +1,19 @@
+@import './Styles/config';
+@import './Styles/utils';
+@import './Components/Header/Header';
+@import './Components/Footer/Footer';
+@import './Components/ArrowUp/ArrowUp';
+@import './Pages/NotFound/notFound';
+
+@import './Components/LandingPage/Banner/Banner.scss';
+@import './Components/LandingPage/HowItWorks/HowItWorks';
+@import './Components/LandingPage/Wallets/Wallets';
+@import './Components/LandingPage/NewsLetter/NewsLetter';
+@import './Components/Nft/AddForm/AddForm';
+@import './Components/Nft/CreateNFTBanner/CreateNFTBanner.scss';
+@import './Components/Contact/ContactForm.scss';
+@import './Components/Modals/WalletsPopup/WalletsPopup';
+@import './Components/MarketPlace/NFTCard/NFTCard';
+@import './Components/Portfolio/Dashboard/Dashboard.scss';
+@import './Components/NFTById/NFTById';
+@import './Components/Artists/Artists.scss';

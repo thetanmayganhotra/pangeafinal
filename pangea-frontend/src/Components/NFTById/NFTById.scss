@@ -1,0 +1,79 @@
+.single_nft {
+  padding: 120px 0 50px 0;
+
+  .nft__image {
+    background-color: $secondary_theme;
+    @include neonEffectModal(5px, $neon_background_seven);
+    border-radius: 5px;
+    width: 100%;
+    height: 450px;
+    img {
+      border-radius: 5px;
+      @include image(contain);
+    }
+  }
+  .nft__right {
+    padding-left: 50px;
+    @include mQ($lg) {
+      padding-left: 0;
+    }
+    .header {
+      h4 {
+        font-weight: 600;
+      }
+      p {
+        span {
+          color: $primary_theme;
+        }
+      }
+    }
+    .price_section {
+      border-radius: 5px;
+      border: 1px solid whitesmoke;
+      padding: 20px 10px;
+
+      button {
+        margin-top: 20px;
+      }
+      h2 {
+        color: $white_pure !important;
+        text-align: left;
+        width: fit-content;
+      }
+      .sale_buttons {
+        max-width: 500px;
+        @include displayCenter(center, space-between);
+      }
+    }
+    .description {
+      margin-top: 30px;
+      border-radius: 5px;
+      border: 1px solid whitesmoke;
+      h5 {
+        border-bottom: 1px solid whitesmoke;
+        padding: 20px 10px;
+      }
+      p {
+        padding: 20px 10px;
+      }
+    }
+  }
+  @include mQ($sm) {
+    padding: 100px 0 0 0;
+    .nft__image {
+      height: 400px;
+    }
+    .description {
+      h5 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.sale_buttons {
+  max-width: 400px;
+  @include displayCenter(center, space-between);
+  flex-wrap: wrap;
+}
+

@@ -1,0 +1,39 @@
+/*color*/
+$white: #fff;
+$gray: #bbb;
+$black: #111;
+$general: #727272;
+$black_soft: rgb(5, 5, 5);
+$black_col: #2e333c;
+$black_more: #0f0f0f;
+$color: #8364E2;
+$color_more: #403f83;
+.col-white{
+  color: $white;
+}
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/*general*/
+html {scroll-behavior: auto;}
+body {
+  font-family: "DM Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $general;
+  word-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.greyscheme h3{
+    margin-top: 0;
+    font-weight: 700;
+    color: #fff;
+}
+.spacer-double {
+    width: 100%;
+    height: 60px;
+    display: block;
+    clear: both;
+}

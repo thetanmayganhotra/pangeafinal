@@ -1,0 +1,156 @@
+.nft_card {
+  padding: 20px;
+  // background: #19242e;
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 10px;
+  height: 100%;
+  //   border: 1px solid $white_dull;
+  @include neonEffectThree(10px);
+  .nft_card_image_wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    .nft_card_image {
+      border-radius: 10px;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        transition: $transition;
+        @include image(cover);
+        border-radius: 10px;
+      }
+      
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .user_image {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid #19242e;
+      overflow: hidden;
+      img {
+        @include image(cover);
+      }
+      @include mQ($sm) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  h6 {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  div {
+    text-align: left;
+  }
+  button {
+    border-radius: 33px;
+    font-size: 11px;
+    padding: 5px 10px;
+    svg {
+      font-size: 12px;
+    }
+  }
+
+  @include mQ($sm) {
+    padding: 10px;
+    .nft_card_image_wrapper {
+      margin-bottom: 20px;
+      .nft_card_image {
+        height: 150px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    h6 {
+      margin: 5px 0;
+      font-size: 12px;
+      @include userAddress(200px);
+    }
+
+    div {
+      text-align: center;
+    }
+    button {
+      font-size: 10px;
+      margin-top: 5px;
+      padding: 3px 10px;
+      svg {
+        font-size: 11px;
+      }
+    }
+  }
+  @include mQ(479px) {
+    h6 {
+      @include userAddress(100px);
+    }
+    button {
+      font-size: 11px;
+      svg {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.loading {
+  h6 {
+    width: 90%;
+    height: 15px;
+    background: #2b3641;
+    border-radius: 5px;
+  }
+  .btn_loading {
+    background: #2b3641;
+    border: 0;
+    width: 50%;
+    height: 32px;
+    border-radius: 33px;
+  }
+  @include mQ($sm) {
+    .nft_card_image_wrapper {
+      margin-bottom: 25px;
+    }
+    h6 {
+      width: 100%;
+      height: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn_loading {
+      margin: auto;
+      width: 50%;
+      margin-top: 5px;
+      height: 20px;
+    }
+  }
+}
+
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton_loading 1s linear infinite alternate !important;
+}
+
+@keyframes skeleton_loading {
+  0% {
+    background: #2b3641;
+  }
+  100% {
+    background: #778ba0;
+  }
+}

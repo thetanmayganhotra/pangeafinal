@@ -1,0 +1,48 @@
+.footer {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  margin-top: 100px;
+  &:after {
+    position: absolute;
+    content: '';
+    top: -40px;
+    background: $gradient_one;
+    height: 2px;
+    width: 100%;
+  }
+  .imgg {
+    width: 150px;
+    img {
+      @include image(contain);
+    }
+  }
+  .copyright {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .envelope_wrapper {
+    svg {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  }
+
+  @include mQ($md) {
+    // margin: auto;
+    .c {
+      text-align: center !important;
+      margin: auto auto 10px auto !important;
+      font-size: 12px !important;
+      p {
+        margin: 0;
+      }
+      .copyright {
+        font-size: 11px !important;
+      }
+      .imgg {
+        width: 100px;
+      }
+    }
+  }
+}

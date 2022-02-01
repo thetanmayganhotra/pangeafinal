@@ -1,0 +1,102 @@
+.banner {
+  min-height: 110vh;
+  display: grid;
+  place-items: center;
+  // mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+  background-image: url('../../../Assets/LandingPage/banner_bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_left {
+    @include displayCenter(flex-start, center);
+    flex-direction: column;
+    height: 100%;
+    .intro {
+      max-width: 600px;
+      margin-bottom: 20px;
+      .section_heading {
+        font-size: 50px;
+      }
+      .section_small_heading {
+        margin-left: 59px;
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+    .social_txt {
+      margin-bottom: 0;
+    }
+    .social_links {
+      @include displayCenter(flex-start, space-between);
+      flex-wrap: wrap;
+      width: 320px !important;
+      margin-top: 20px;
+      svg {
+        font-size: 28px;
+        color: $white_pure;
+      }
+    }
+    .banner_buttons {
+      @include displayCenter(center, space-between);
+      min-width: 280px;
+      margin-bottom: 30px;
+      button {
+        border-radius: 33px;
+      }
+    }
+  }
+  &_right {
+    position: relative;
+    @include displayCenter(center, center);
+    .robo_coin {
+      @include image(contain);
+    }
+  }
+  @include mQ($lg) {
+    &_left {
+      @include displayCenter(center, center);
+      text-align: center;
+    }
+    &_right {
+      display: none !important;
+      background: tan;
+    }
+  }
+  @include mQ($sm) {
+    min-height: auto !important;
+    padding: 130px 0 50px 0px;
+    &_left {
+      text-align: center;
+      margin-top: 50px;
+      .intro {
+        margin-bottom: 0px;
+        .section_small_heading {
+          margin: 0 0 10px 0;
+        }
+        h1 {
+          margin: 30px 0 30px 0;
+        }
+      }
+      .social_txt {
+        text-align: center;
+      }
+      .social_links {
+        max-width: 200px;
+        margin: 30px auto auto auto;
+        svg {
+          font-size: 28px;
+          color: $white_pure;
+        }
+      }
+      .banner_buttons {
+        @include displayCenter(center, space-between);
+        min-width: 250px;
+        margin-bottom: 20px;
+        button {
+          border-radius: 33px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.newsLetter {
+  padding: 20px 0;
+
+  &_wrapper {
+    .section_info {
+      h1 {
+        color: $white_pure;
+        font-weight: 600;
+        font-size: 40px;
+        @include mQ($md) {
+          font-size: 30px;
+        }
+        @include mQ($sm) {
+          font-size: 22px !important;
+        }
+      }
+    }
+    background: $gradient_five;
+    border-radius: 15px;
+    padding: 10px;
+    .newsletter_form {
+      @include displayCenter(flex-start, space-between);
+      flex-wrap: wrap;
+      max-width: 567px;
+      margin: auto;
+      span {
+        color: #dc3545 !important;
+        font-size: 11px;
+      }
+      input {
+        color: $white_dull;
+        padding: 10px 15px;
+        // background: transparent;
+        background: $gradient_five;
+        border-radius: 5px;
+        border: 0;
+        font-size: 14px;
+        font-weight: 500;
+        width: 400px;
+
+        height: 50px;
+        &::placeholder {
+          color: $white_dull;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+      button {
+        padding: 15px 35px;
+      }
+      @include mQ($md) {
+        text-align: center;
+
+        .form-group {
+          width: 1000% !important;
+        }
+        input {
+          width: 100% !important;
+        }
+        button {
+          width: 100%;
+          margin: auto !important;
+        }
+      }
+    }
+    .social_links {
+      @include displayCenter(center, space-between);
+      flex-wrap: wrap;
+      max-width: 280px;
+      margin: auto;
+      padding: 50px 0 50px 0;
+      svg {
+        font-size: 32px;
+        background: transparent;
+      }
+    }
+  }
+  @include mQ($sm) {
+    padding: 0;
+  }
+}

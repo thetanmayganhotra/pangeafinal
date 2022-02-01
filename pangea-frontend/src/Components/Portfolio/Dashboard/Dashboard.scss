@@ -1,0 +1,219 @@
+body {
+    font-family: "DM Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #727272;
+    word-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+.profile_section {
+  @include displayCenter(center, center);
+  flex-direction: column;
+  position: relative;
+  margin: 0px 0 0px 0;
+  padding: 50px;
+  
+}
+
+
+.userNAme {
+  margin: -15px 0 0 0;
+  @include displayCenter(center, center);
+  input {
+    background-color: transparent;
+    max-width: 400px;
+    color: $white_pure !important;
+    font-size: 18px;
+    text-align: center;
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+._user__id {
+  margin: 0px 0;
+  position: relative;
+  @include displayCenter(center, center);
+
+  p {
+    padding: 10px 25px;
+    position: relative;
+    cursor: pointer;
+    svg {
+      margin-left: 10px;
+    }
+    background: $secondary_theme;
+    @include neonEffectModal(0, $neon_background_three);
+  }
+  &:hover {
+    .toolt {
+      visibility: visible;
+    }
+  }
+  @include mQ($sm) {
+    p {
+      @include userAddress(200px);
+    }
+  }
+}
+.d_profile {
+    margin-bottom: 40px;
+}
+.de-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.Image{
+  background-image: url(http://134.209.110.122:1337/uploads/author_1_6f9ad9e11a.jpg);
+  height: 140px;
+  width: 140px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.profile_name {
+    margin-left: 20px;
+}
+.profile_name h4 {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+.de-flex > .de-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_avatar{
+  display: flex;
+}
+.profile_avatar i {
+    color: #ffffff;
+    background: #FF343F;
+    margin: 110px 0 0 110px;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.profile_name {
+    margin-left: 20px;
+}
+.profile_name {
+    display: flex;
+    align-items: center;
+}
+.profile_name h4{
+  font-size: 24px;
+  line-height: 1.3em;
+}
+h4{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.profile_name .profile_username {
+    font-size: 16px;
+    display: block;
+    color: #FF343F;
+}
+.profile_wallet {
+    font-size: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    overflow: hidden;
+    float: left;
+    color: #727272;
+}
+#btn_copy {
+    position: absolute;
+    font-size: 12px;
+    padding: 4px 10px;
+    line-height: 1em;
+    border: solid 1px #dddddd;
+    display: inline-block;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.de-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.de-flex > .de-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_follower {
+    margin-right: 20px;
+    font-weight: 600;
+}
+.de-flex > .de-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-main {
+    display: block;
+    width: max-content;
+    text-align: center;
+    color: #fff !important;
+    background: #FF343F;
+    border-radius: 30px;
+    letter-spacing: normal;
+    outline: 0;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 8px 40px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    // box-shadow: 2px 2px 20px 0px rgb(131 100 226 / 0%);
+    transition: all 0.3s ease;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.items_filter {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: -14px;
+}
+.de_nav.text-left {
+    text-align: left;
+    margin: 10px;
+}
+.de_nav{
+  font-weight: bold;
+}
+.de_nav li {
+    float: none;
+    display: inline-block;
+    margin-right: 5px;
+    // background-color: red;
+    padding: 5px;
+    border: black;
+}
+
+.de_nav li span {
+    position: relative;
+    padding: 10px 20px;
+    margin-right: 5px;
+    display: block;
+    background: none;
+    text-decoration: none;
+    color: #bbb;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 15px;
+    cursor: poInter;
+    -webkit-border-radius: 3px;
+}

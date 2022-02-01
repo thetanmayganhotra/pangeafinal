@@ -1,0 +1,157 @@
+.navbar {
+  transition: $transition;
+  .mode {
+    visibility: hidden;
+    @include mQ($lg) {
+      visibility: visible;
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+  .desk {
+    @include mQ($lg) {
+      display: none !important;
+    }
+  }
+  a {
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  a,
+  button {
+    @include mQ($xl) {
+      font-size: 12px !important;
+    }
+  }
+  .network_select {
+    margin-right: 10px;
+    background-color: $secondary_theme;
+    border-radius: 50%;
+    border: 2px solid $white_pure;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    @include displayCenter(center, center);
+    padding: 5px;
+    @include mQ($lg) {
+      margin-right: 0;
+    }
+    .img_net {
+      width: 20px;
+      img {
+        @include image(contain);
+      }
+    }
+  }
+
+  // .network_select {
+  //   background-color: transparent;
+  //   color: $white_pure;
+  //   padding: 6px !important;
+  //   border-radius: 5px;
+  //   cursor: pointer;
+  //   margin-right: 5px;
+  //   @include mQ($lg) {
+  //     margin-right: 0;
+  //   }
+  //   option {
+  //     background: #000;
+  //   }
+  //   &:focus {
+  //     outline: 0;
+  //     padding: 0;
+  //     margin: 0;
+  //     border-color: inherit !important;
+  //   }
+  // }
+  .active {
+    color: $white_pure !important;
+  }
+  .navbar-brand {
+    // font-weight: bold;
+    // font-size: 25px !important;
+    width: 150px;
+    // height: 120px;
+    img {
+      @include image(contain);
+    }
+
+    @include mQ($sm) {
+      width: 100px;
+    }
+  }
+
+  .nav__ {
+    width: 100%;
+    @include displayCenter(center, space-between);
+    .navbar__left {
+      @include displayCenter(center, space-between);
+      margin: auto;
+      a {
+        padding: 0 15px !important;
+        @include mQ($xl) {
+          padding: 0 10px !important;
+        }
+      }
+    }
+    .navbar__right {
+      @include displayCenter(center, space-between);
+      .btn_brand {
+        padding: 10px !important;
+        svg {
+          margin-right: 10px;
+        }
+      }
+      .user_id {
+        @include userAddress(180px);
+        padding: 10px !important;
+        text-transform: lowercase;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.navbar__bg {
+  background-color: #000;
+}
+
+@include mQ($lg) {
+  .navbar {
+    background-color: #000;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // z-index: 1030;
+    // a,
+    // button {
+    //   margin-top: 15px;
+    // }
+    .nav__ {
+      align-items: flex-end;
+      .navbar__left {
+        margin: 0 !important;
+        flex-direction: column;
+        align-items: flex-end !important;
+        a {
+          margin-top: 20px;
+        }
+      }
+      .navbar__right {
+        flex-direction: column;
+        align-items: flex-end !important;
+        button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+div.dropdown-menu.show {
+    background-color: black;
+}

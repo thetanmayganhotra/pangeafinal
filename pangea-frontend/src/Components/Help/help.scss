@@ -1,0 +1,108 @@
+.greyscheme .container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.greyscheme section{
+  padding: 90px 0;
+  background: #212428;
+}
+.row{
+    display: flex;
+}
+
+.feature-box:hover .inner i.wm {
+    transform: scale(1.2);
+    color: rgba(0, 0, 0, .05);
+    z-index: 0;
+}
+$general: #727272;
+html {scroll-behavior: auto;}
+body {
+  font-family: "DM Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $general;
+  word-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.greyscheme .feature-box.f-boxed {
+    overflow: none;
+    padding: 50px;
+    background: #212428;
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+    transition: .7s;
+    &:hover{
+      background: #212428;
+      transition: .7s;
+    }
+}
+.greyscheme .feature-box.f-boxed:hover {
+    color: #ffffff;
+    -webkit-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.greyscheme .feature-box.f-boxed:hover h4 {
+    color: #ffffff;
+}
+.greyscheme .btn-main {
+    display: block;
+    width: max-content;
+    text-align: center;
+    color: #fff !important;
+    background: #FF343F;
+    border-radius: 30px;
+    letter-spacing: normal;
+    outline: 0;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 8px 40px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 0px rgba(131, 100, 226, 0);
+    transition: all 0.3s ease;
+    &:hover{
+      box-shadow: 2px 2px 20px 0px #FF343F;
+      transition: all 0.3s ease;
+    }
+    &.inline{
+      display: inline-block;
+      margin-right: 15px;
+      &.white{
+        color: #403f83 !important;
+        background:#fff0;
+      }
+    }
+}
+
+.form-controls {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    // background-color: rgb(129, 129, 129);
+    background: rgba(255, 255, 255, 0.7);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+h4 {
+    font-size: calc(1.275rem + .3vw);
+    color: white;
+}
+.text{
+  color: #727272;
+}
+.text:hover{
+  transition: 0.5s;
+  color: white;
+}
