@@ -91,7 +91,7 @@ const AddForm = () => {
       axiosConfig
     );
     var tokenHash = response.data;
-    var tokenUri = "https://thepangea.mypinata.cloud/ipfs/" + tokenHash;
+    var tokenUri = "https://gateway.pinata.cloud/ipfs/" + tokenHash;
     try {
       var tokenCounter = await createNFT.methods.getTokenCounter().call();
       const res = await createNFT.methods
